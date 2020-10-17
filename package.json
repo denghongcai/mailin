@@ -1,8 +1,10 @@
 {
-  "name": "mailin",
+  "name": "mailin-without-python",
   "version": "3.0.2",
   "description": "Artisanal inbound emails for every web app",
-  "engine": "node ~0.12.4",
+  "engines": {
+    "node": ">=8"
+  },
   "main": "index.js",
   "bin": {
     "mailin": "./run-cli.js"
@@ -13,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Flolagale/mailin.git"
+    "url": "https://github.com/denghongcai/mailin-without-python.git"
   },
   "keywords": [
     "incoming",
@@ -25,15 +27,16 @@
     "webhook",
     "post"
   ],
-  "author": "Florent Galland",
+  "author": "Hongcai Deng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Flolagale/mailin/issues"
+    "url": "https://github.com/denghongcai/mailin-without-python/issues"
   },
-  "homepage": "https://github.com/Flolagale/mailin",
+  "homepage": "https://github.com/denghongcai/mailin-without-python",
   "dependencies": {
     "bluebird": "^2.9.30",
     "commander": "^2.8.1",
+    "dkim": "^0.7.2",
     "extend": "^2.0.1",
     "forever-monitor": "^1.5.2",
     "html-to-text": "^1.3.1",
@@ -45,6 +48,8 @@
     "shelljs": "^0.5.1",
     "smtp-server": "^1.4.0",
     "spamc": "0.0.5",
+    "spamd-client": "^1.0.1",
+    "spf-check": "^0.4.3",
     "superagent": "^1.2.0",
     "winston": "^1.0.0"
   },

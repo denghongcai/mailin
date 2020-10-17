@@ -3,8 +3,7 @@ var semver = require('semver');
 var pkg = require('./package.json');
 
 /* Check compatibility with versions of node and iojs. */
-if (!semver.satisfies(process.version, '~0.12.0') &&
-    !semver.satisfies(process.version, '>=2.0.0')) {
+if (!semver.satisfies(process.version, '>=8.0.0')) {
     console.log('\n*****\nYour current node version (' + process.version +
         ') is not compatible with Mailin v' + pkg.version +
         ' which requires ' + pkg.engine +
