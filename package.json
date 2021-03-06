@@ -46,7 +46,7 @@
     "node-uuid": "^1.4.3",
     "semver": "^5.0.1",
     "shelljs": "^0.5.1",
-    "smtp-server": "^1.4.0",
+    "smtp-server": "^3.8.0",
     "spamc": "0.0.5",
     "spamd-client": "^1.0.1",
     "spf-check": "^0.4.3",
